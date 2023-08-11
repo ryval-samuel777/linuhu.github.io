@@ -1,0 +1,10 @@
+runtime: python39  # Set the runtime to your desired version
+
+handlers:
+  - url: /css
+    static_dir: css  # Directory containing your CSS files
+  - url: /img
+    static_dir: img  # Directory containing your image files
+  - url: /.*
+    static_files: index.html  # Your main HTML file
+    upload: index.html
